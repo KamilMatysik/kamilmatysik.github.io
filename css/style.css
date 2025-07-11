@@ -7,3 +7,22 @@
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 35px;
 }
+#bigArrow{
+    scale: 150%;
+    right: 6px;
+}
+.sideTabArrows{
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
+    animation: sideArrowsBase 0.5s linear forwards;
+}
+#sideTabArrowsDiv:hover .sideTabArrows{
+    animation: sideArrowsGrow 0.5s linear forwards;
+}
+@keyframes sideArrowsGrow{
+    to{transform: scale(1.5);}
+}
+@keyframes sideArrowsBase{
+    to{transform: scale(1);}
+}
