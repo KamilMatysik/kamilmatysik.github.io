@@ -1,21 +1,31 @@
-:root{
-    --bg-color: white;
-    --text-color: black;
-    --transition: background-color 1s, color 1s linear;
-}
-
-[data-theme = "dark"] {
-   --bg-color: black;
-  --text-color: white; 
-}
-
 @font-face {
     font-family: Roboto-Slab;
     src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
 }
+/* Default Colour Palette */
+:root{
+    --main-bg-colour: black;
+    --text-colour: white;
+    --tiles-bg-colour: rgb(39, 39, 39);
+    --tiles-border-colour: rgb(88, 88, 88);
+    --bg-transition: background-color  1s, color 1s linear;
+    --border-transition: border-color  1s, color 1s linear;
+}
+/* Light Colour Palette */
+[data-theme = "light"] {
+    --main-bg-colour: white;
+    --text-colour: black;
+    --tiles-bg-colour: rgb(216, 216, 216);
+    --tiles-border-colour: rgb(167, 167, 167);
+}
+p, h1, h2, h3, a, button {
+  color: var(--text-colour);
+  transition: var(--bg-transition), var(--border-transition);
+}
 #mainTitle{
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 35px;
+    grid-area: 1 / 2 / 1 / 5;
     text-align: center;
 }
 html, body{
@@ -26,21 +36,27 @@ body{
     height: 100vh;
     width: 100vw;
 
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: var(--transition);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    grid-auto-rows: 200px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    background-color: var(--main-bg-colour);
+    color: var(--text-colour);
+    transition: var(--bg-transition), var(--border-transition);
 }
-p, h1, h2, h3, a, button, div {
-  color: var(--text-color);
-  transition: var(--transition);
-}
+
+
+/* Light/Dark Mode */
 #lightDark{
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 10px;
+    top: 30px;
     right: 10px;
-    border-color: gray;
+    border-color: var(--tiles-border-colour);
     border-width: 2px;
     border-radius: 10px;
     border-style:solid;
@@ -49,7 +65,8 @@ p, h1, h2, h3, a, button, div {
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    align-content: center;
+    grid-area: 1 / 5 / 2 / 6;
+    transition: var(--bg-transition), var(--border-transition);
 }
 .lightDark{
     scale: 1;
@@ -61,4 +78,29 @@ p, h1, h2, h3, a, button, div {
 }
 #sunIcon{
     fill: white;
+}
+
+/* Nav Panel */
+#navPanel{
+    background-color: var(--tiles-bg-colour);
+    transition: var(--bg-transition), var(--border-transition);
+    border-color: var(--tiles-border-colour);
+    border-radius: 1px;
+    border-style: solid;
+    width: 15vw;
+    grid-area: 2 / 1 / 4 / 2;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: sticky;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+
+}
+#test{
+    background-color: var(--tiles-bg-colour);
+    grid-area: 10 / 1 / 11/ 2;
 }
