@@ -2,19 +2,26 @@
     font-family: Roboto-Slab;
     src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: Tech-Body;
+    src: url(../fonts/ShareTechMono-Regular.ttf);
+}
 /* Default Colour Palette */
 :root{
     --main-bg-colour: black;
     --text-colour: white;
+    --text-hover-colour: rgba(255, 255, 255, 0.5);
     --tiles-bg-colour: rgb(39, 39, 39);
     --tiles-border-colour: rgb(88, 88, 88);
     --bg-transition: background-color  1s, color 1s linear;
     --border-transition: border-color  1s, color 1s linear;
+    --text-hover-transition: color 0.3s ease-out;
 }
 /* Light Colour Palette */
 [data-theme = "light"] {
     --main-bg-colour: white;
     --text-colour: black;
+    --text-hover-colour: rgba(0, 0, 0, 0.5);
     --tiles-bg-colour: rgb(216, 216, 216);
     --tiles-border-colour: rgb(167, 167, 167);
 }
@@ -33,8 +40,8 @@ html, body{
     padding: 0;
 }
 body{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -46,6 +53,8 @@ body{
     background-color: var(--main-bg-colour);
     color: var(--text-colour);
     transition: var(--bg-transition), var(--border-transition);
+
+
 }
 
 
@@ -92,6 +101,7 @@ body{
     margin-left: 10px;
     border-radius: 10px;
     position: sticky;
+    top: 0;
 
     display: flex;
     flex-direction: column;
@@ -100,7 +110,13 @@ body{
     padding: 0;
 
 }
-#test{
-    background-color: var(--tiles-bg-colour);
-    grid-area: 10 / 1 / 11/ 2;
+#navPanel > a{
+    font-size: 2.3vw;
+    font-family: Tech-Body;
+    text-decoration: none;
+}
+#navPanel > a:hover{
+    color: var(--text-hover-colour);
+    text-decoration: underline;
+    transition: var(--text-hover-transition);
 }
