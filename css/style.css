@@ -32,7 +32,7 @@ p, h1, h2, h3, a, button {
 #mainTitle{
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 35px;
-    grid-area: 1 / 2 / 1 / 5;
+    grid-area: 1 / 4 / 2 / 8;
     text-align: center;
 }
 html, body{
@@ -44,8 +44,8 @@ body{
     min-width: 100vw;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 200px);
     grid-auto-rows: 200px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -74,7 +74,7 @@ body{
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    grid-area: 1 / 5 / 2 / 6;
+    grid-area: 1 / 9 / 2 / 10;
     transition: var(--bg-transition), var(--border-transition);
 }
 .lightDark{
@@ -96,8 +96,7 @@ body{
     border-color: var(--tiles-border-colour);
     border-radius: 1px;
     border-style: solid;
-    width: 15vw;
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 4 / 1;
     margin-left: 10px;
     border-radius: 10px;
     position: sticky;
@@ -111,7 +110,7 @@ body{
 
 }
 #navPanel > a{
-    font-size: 2.3vw;
+    font-size: 1rem;
     font-family: Tech-Body;
     text-decoration: none;
 }
@@ -119,4 +118,32 @@ body{
     color: var(--text-hover-colour);
     text-decoration: underline;
     transition: var(--text-hover-transition);
+}
+
+/* Introduction Panel */
+#introductionPanel{
+    background-color: var(--tiles-bg-colour);
+    transition: var(--bg-transition), var(--border-transition);
+    border-color: var(--tiles-border-colour);
+    border-radius: 1px;
+    border-style: solid;
+    border-radius: 10px;
+
+    grid-area: 2 / 3 / 4 / 8;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+#introductionPanel > #ipH{
+    font-family: Roboto-Slab;
+    font-weight: bold;
+    align-self: center;
+    font-size: 170%;
+    padding-bottom: 0;
+}
+#introductionPanel > #ipB{
+    font-family: Tech-Body;
+    font-size: 120%;
+    max-width: 70ch;
+    padding-top: 0;
 }
