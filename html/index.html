@@ -20,17 +20,40 @@
         <h1 id="mainTitle">Kamil Matysik</h1>
 
         <!--Left - Navigation-->
-        <div id="navPanel">
-            <a href="">Introduction</a><br>
-            <a href="">Projects</a><br>
-            <a href="">Experience</a><br>
-            <a href="">About Me</a>
+        <div id="navPanel" class="panel">
+            <a href="#mainTitle" class="transitionLink">Introduction</a><br>
+            <a href="#projectPanel" class="transitionLink">Projects</a><br>
+            <a href="#experiencePanel" class="transitionLink">Experience</a><br>
+            <a href="#aboutMePanel" class="transitionLink">About Me</a>
         </div>
 
         <!--Introduction Panel-->
-        <div id="introductionPanel">
-            <p id="ipH">Introduction</p>
-            <p id="ipB">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore minus sit distinctio maxime assumenda provident architecto laudantium perspiciatis mollitia neque? Commodi optio quisquam quis. Hic animi dignissimos nostrum error et.</p>
+        <div id="introductionPanel" class="panel">
+            <p class="panelHeader">Introduction</p>
+            <p class="panelBody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore minus sit distinctio maxime assumenda provident architecto laudantium perspiciatis mollitia neque? Commodi optio quisquam quis. Hic animi dignissimos nostrum error et.</p>
+        </div>
+
+        <!--Project Panel-->
+        <div id="projectPanel" class="panel">
+            <p class="panelHeader" style="grid-area: 1 / 2 / 1 / 2; padding-bottom: 2%;">Projects</p>
+            <div style="background-color: blue; grid-area: 2 / 1 / 2 / 1;">1</div>
+            <div style="background-color: red; grid-area: 2 / 2 / 2 / 2;">2</div>
+            <div style="background-color: green; grid-area: 2 / 3 / 2 / 3;">3</div>
+            <div style="background-color: pink; grid-area: 3 / 1 / 3 / 1;">4</div>
+            <div style="background-color: purple; grid-area: 3 / 2 / 3 / 2;">5</div>
+            <div style="background-color: yellow; grid-area: 3 / 3 / 3 / 3;">6</div>
+        </div>
+
+        <!--Experience Panel-->
+        <div id="experiencePanel" class="panel">
+            <p class="panelHeader">Experience</p>
+            <p class="panelBody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quos est, architecto quisquam labore, incidunt consectetur magnam doloremque, totam modi culpa illo non eum sed illum id animi quidem amet!</p>
+        </div>
+
+        <!--About Me Panel-->
+        <div id="aboutMePanel" class="panel">
+            <p class="panelHeader">About Me</p>
+            <p class="panelBody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quos est, architecto quisquam labore, incidunt consectetur magnam doloremque, totam modi culpa illo non eum sed illum id animi quidem amet!</p>
         </div>
 
 
