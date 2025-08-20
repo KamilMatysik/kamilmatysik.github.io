@@ -161,6 +161,13 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+.projectShow{
+    margin: 2%;
+}
+.projectShow:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
 
 /* Experience Panel */
 #experiencePanel{
