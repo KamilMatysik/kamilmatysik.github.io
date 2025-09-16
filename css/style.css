@@ -147,6 +147,7 @@ body{
     padding: 2%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 /* Project Panel */
@@ -163,6 +164,7 @@ body{
 }
 .projectShow{
     margin: 2%;
+    border-radius: 10px;
 }
 .projectShow:hover{
     transform: scale(1.2);
@@ -184,6 +186,7 @@ body{
     grid-template-rows: 25% 1fr;
     font-size: 80%;
     padding: 0px;
+    overflow: auto;
 }
 
 /* About Me Panel */
@@ -193,15 +196,28 @@ body{
     padding: 2%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 /* Contact Details Panel */
 #contactPanel{
     text-align: center;
-    grid-area: 22 / 3 / 24 / 9;
+    grid-area: 22 / 4 / 24 / 8;
     padding: 2%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    overflow: scroll;
+}
+
+#contactPanel > a{
+    text-decoration: none;
+}
+
+#contactPanel > a:hover{
+    color: var(--text-hover-colour);
+    text-decoration: underline;
+    transition: var(--text-hover-transition);
 }
 
 /* Temporary contruction bar */
