@@ -176,13 +176,14 @@ body{
     padding: 2%;
     background-color: transparent;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-rows: 10% 30% 30% 30%;
 }
 .experienceDetails{
     margin: 2%;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 25% 1fr;
     font-size: 80%;
+    padding: 0px;
 }
 
 /* About Me Panel */
@@ -192,4 +193,5 @@ body{
     padding: 2%;
     display: flex;
     flex-direction: column;
+    
 }
