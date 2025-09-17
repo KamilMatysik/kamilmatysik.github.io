@@ -12,6 +12,7 @@
     --text-colour: white;
     --text-hover-colour: rgba(255, 255, 255, 0.5);
     --tiles-bg-colour: rgb(39, 39, 39);
+    --low-opacity-bg: rgb(39, 39, 39, 0.7);
     --tiles-border-colour: rgb(88, 88, 88);
     --bg-transition: background-color  1s, color 1s linear;
     --border-transition: border-color  1s, color 1s linear;
@@ -218,6 +219,26 @@ body{
     color: var(--text-hover-colour);
     text-decoration: underline;
     transition: var(--text-hover-transition);
+}
+
+/* Modals */
+
+#modalContainer{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--low-opacity-bg);
+}
+
+#modalContent{
+    background-color: var(--tiles-bg-colour);
+    width: 70%;
+    height: 70%;
+    margin: 15%;
 }
 
 /* Temporary contruction bar */
