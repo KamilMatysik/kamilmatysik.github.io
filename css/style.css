@@ -223,7 +223,7 @@ body{
 
 /* Modals */
 
-#modalContainer{
+.modalContainer{
     display: none;
     position: fixed;
     z-index: 1;
@@ -234,11 +234,30 @@ body{
     background-color: var(--low-opacity-bg);
 }
 
-#modalContent{
+.modalContent{
     background-color: var(--tiles-bg-colour);
     width: 70%;
     height: 70%;
     margin: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalTitle{
+    font-family: Roboto-Slab, Georgia, serif;
+    font-size: 2em;
+    padding: 5%;
+    
+}
+
+.outClickLabel{
+    position: absolute;
+    bottom: 0%;
+    padding: 2%;
+    margin-top: auto;
+    font-family: Roboto-Slab, Georgia, serif;
 }
 
 /* Temporary contruction bar */
