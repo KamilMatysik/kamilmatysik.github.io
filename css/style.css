@@ -35,6 +35,7 @@ p, h1, h2, h3, a, button {
     font-size: 35px;
     grid-area: 1 / 4 / 2 / 8;
     text-align: center;
+    margin-top: 7.5%;
 }
 html{
     scroll-behavior: smooth;
@@ -119,10 +120,10 @@ body{
 
 /* Nav Panel */
 #navPanel{
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 5 / 2;
     margin-left: 10px;
     position: sticky;
-    top: 150px;
+    top: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -131,7 +132,7 @@ body{
 
 }
 #navPanel > a{
-    font-size: 1rem;
+    font-size: 1em;
     font-family: Tech-Body;
     text-decoration: none;
 }
@@ -144,7 +145,7 @@ body{
 /* Introduction Panel */
 #introductionPanel{
     text-align: center;
-    grid-area: 2 / 4 / 4 / 8;
+    grid-area: 3 / 4 / 5 / 8;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -154,7 +155,7 @@ body{
 /* Project Panel */
 #projectPanel{
     text-align: center;
-    grid-area: 6 / 3 / 10 / 9;
+    grid-area: 7 / 3 / 11 / 9;
     padding: 2%;
     display: grid;
 
@@ -187,7 +188,7 @@ body{
     margin: 2%;
     display: grid;
     grid-template-rows: 25% 1fr;
-    font-size: 80%;
+    font-size: 90%;
     padding: 0px;
     overflow: auto;
 }
@@ -211,6 +212,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     overflow: scroll;
+    margin-bottom: 5%;
 }
 
 #contactPanel > a{
@@ -258,6 +260,28 @@ body{
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 1.25em;
 }
+
+
+
+@media (max-width: 700px){
+    #navPanel{
+        display: none;
+    }
+    #aboutMePanel{
+        grid-area: 18 / 3 / 20 / 9;
+    }
+    #contactPanel{
+        grid-area: 22 / 3 / 24 / 9;
+    }
+    #introductionPanel{
+        grid-area: 3 / 3 / 5 / 9;
+    }
+    #projectPanel{
+        grid-area: 7 / 2 / 11 / 10;
+    }
+}
+
+
 
 /* Temporary contruction bar */
 #construction{
