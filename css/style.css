@@ -166,6 +166,8 @@ body{
 .projectShow{
     margin: 2%;
     border-radius: 10px;
+    font-family: Roboto-Slab, Georgia, serif;
+    background-color: var(--tiles-border-colour);
 }
 .projectShow:hover{
     transform: scale(1.2);
@@ -252,12 +254,9 @@ body{
     
 }
 
-.outClickLabel{
-    position: absolute;
-    bottom: 0%;
-    padding: 2%;
-    margin-top: auto;
+.modalBody{
     font-family: Roboto-Slab, Georgia, serif;
+    font-size: 1.25em;
 }
 
 /* Temporary contruction bar */
