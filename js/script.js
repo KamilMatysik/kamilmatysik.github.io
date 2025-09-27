@@ -17,6 +17,8 @@ var modal4 = document.getElementById("modalContainer4");
 var modal5 = document.getElementById("modalContainer5");
 var modal6 = document.getElementById("modalContainer6");
 
+const modals = [modal1, modal2, modal3, modal4, modal5, modal6];
+
 
 
 document.getElementById("projectPanel").addEventListener("click", function (event){
@@ -41,14 +43,12 @@ document.getElementById("projectPanel").addEventListener("click", function (even
 
 });
 
+
 window.onclick = function(event) {
-    if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4 || event.target == modal5 || event.target == modal6) {
-        modal1.style.display = "none";
-        modal2.style.display = "none";
-        modal3.style.display = "none";
-        modal4.style.display = "none";
-        modal5.style.display = "none";
-        modal6.style.display = "none";
+    if (modals.includes(event.target)) {
+        for (i = 0; i < modals.length; i++){
+            modals[i].style.display = "none"
+        }
     }
 }
 
