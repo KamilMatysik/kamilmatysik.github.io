@@ -17,6 +17,8 @@ var modal4 = document.getElementById("modalContainer4");
 var modal5 = document.getElementById("modalContainer5");
 var modal6 = document.getElementById("modalContainer6");
 
+
+
 document.getElementById("projectPanel").addEventListener("click", function (event){
     if (event.target.id === "modalTab1"){
         modal1.style.display = "block";
