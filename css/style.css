@@ -169,6 +169,11 @@ body{
     border-radius: 10px;
     font-family: Roboto-Slab, Georgia, serif;
     background-color: var(--tiles-border-colour);
+    display: flex;
+    grid-area: 2/1/2/1;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 .projectShow:hover{
     transform: scale(1.2);
@@ -178,6 +183,15 @@ body{
     pointer-events: none;
 }
 
+.projectShow div{
+    flex-grow: 1;
+}
+
+#chessDownload:hover{
+    color: var(--text-hover-colour);
+    text-decoration: underline;
+    transition: var(--text-hover-transition);
+}
 /* Experience Panel */
 #experiencePanel{
     text-align: center;
@@ -269,15 +283,7 @@ body{
 .modalTileTitle{
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 1.3em;
-
-}
-
-#modalTab1{
-    display: flex;
-    grid-area: 2/1/2/1;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 
