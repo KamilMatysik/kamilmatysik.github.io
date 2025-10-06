@@ -324,3 +324,27 @@ body{
     }
 }
 
+@media (max-width: 450px){
+    #introductionPanel{
+        grid-area: 2 / 1 / 4 / 11;
+    }
+    #projectPanel{
+        grid-area: 5 / 1 / 9 / 11;
+    }
+    #experiencePanel{
+        grid-area: 10 / 1 / 14 / 11;
+    }
+    #navPanel{
+        display: none;
+    }
+    #aboutMePanel{
+        grid-area: 15 / 1 / 17 / 11;
+    }
+    #contactPanel{
+        grid-area: 18 / 2 / 20 / 10;
+    }
+    #copyright{
+        grid-area: 20 /1 / 20 / 12;
+        margin-top: 20vw;
+    }
+}
