@@ -286,7 +286,9 @@ body{
     font-family: Roboto-Slab, Georgia, serif;
     font-size: 1.3em;
     flex-grow: 1;
+    max-width: 11ch;
 }
+
 
 
 #copyright{
