@@ -1,3 +1,4 @@
+/* #region mainStuff */
 @font-face {
     font-family: Roboto-Slab;
     src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
@@ -6,6 +7,11 @@
     font-family: Tech-Body;
     src: url(../fonts/ShareTechMono-Regular.ttf);
 }
+@font-face {
+    font-family: Exo2;
+    src: url(../fonts/Exo2-VariableFont_wght.ttf);
+}
+
 /* Default Colour Palette */
 :root{
     --main-bg-colour: black;
@@ -61,9 +67,9 @@ body{
 
 
 }
+/* #endregion mainStuff */
 
-
-/* Light/Dark Mode */
+/* #region Light/Dark Mode */
 #lightDark{
     position: absolute;
     margin: 0;
@@ -93,8 +99,9 @@ body{
 #sunIcon{
     fill: white;
 }
+/* #endregion Light/Dark */
 
-/* Panels */
+/* #region Panels */
 .panel{
     background-color: var(--tiles-bg-colour);
     transition: var(--bg-transition), var(--border-transition);
@@ -117,9 +124,9 @@ body{
     padding: 2%;
     padding-top: 0;
 }
+/* #endregion panels */
 
-
-/* Nav Panel */
+/* #region Nav Panel */
 #navPanel{
     grid-area: 2 / 1 / 5 / 2;
     margin-left: 10px;
@@ -142,8 +149,9 @@ body{
     text-decoration: underline;
     transition: var(--text-hover-transition);
 }
+/* #endregion Nav Panel */
 
-/* Introduction Panel */
+/* #region Introduction Panel */
 #introductionPanel{
     text-align: center;
     grid-area: 3 / 4 / 5 / 8;
@@ -152,8 +160,9 @@ body{
     flex-direction: column;
     overflow: auto;
 }
+/* #endregion Introduction Panel */
 
-/* Project Panel */
+/* #region Project Panel */
 #projectPanel{
     text-align: center;
     grid-area: 7 / 3 / 11 / 9;
@@ -193,7 +202,21 @@ body{
     text-decoration: underline;
     transition: var(--text-hover-transition);
 }
-/* Experience Panel */
+
+.codeTitles{
+    font-family: Exo2;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.codeLanguage{
+    display: flex;
+    flex-direction: row;
+}
+/* #endregion Project Panel */
+
+/* #region Experience Panel */
 #experiencePanel{
     text-align: center;
     grid-area: 13 / 3 / 17 / 9;
@@ -210,8 +233,9 @@ body{
     padding: 0px;
     overflow: auto;
 }
+/* #endregion Experience Panel */
 
-/* About Me Panel */
+/* #region About Me Panel */
 #aboutMePanel{
     text-align: center;
     grid-area: 19 / 4 / 21 / 8;
@@ -220,8 +244,9 @@ body{
     flex-direction: column;
     overflow: auto;
 }
+/* #endregion About Me Panel */
 
-/* Contact Details Panel */
+/* #region Contact Details Panel */
 #contactPanel{
     text-align: center;
     grid-area: 23 / 4 / 25 / 8;
@@ -242,9 +267,9 @@ body{
     text-decoration: underline;
     transition: var(--text-hover-transition);
 }
+/* #endregion Contact Details Panel */
 
-/* Modals */
-
+/* #region Modals */
 .modalContainer{
     display: none;
     position: fixed;
@@ -288,9 +313,9 @@ body{
     flex-grow: 1;
     max-width: 11ch;
 }
+/* #endregion Modals */
 
-
-
+/* #region Misc */
 #copyright{
      grid-area: 25 / 1 / 25 / 12;
      margin-top: 8vw;
@@ -355,4 +380,5 @@ body{
         width: 100%;
         margin-left: 0vw;
     }
+    /* #endregion Misc */
 }
