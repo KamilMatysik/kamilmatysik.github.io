@@ -214,6 +214,14 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+.codeLanguage svg{
+    transform: translateY(10px);
+}
+
+.codeLanguage img{
+    transform: translate(-5px, 10px);
+}
 /* #endregion Project Panel */
 
 /* #region Experience Panel */
