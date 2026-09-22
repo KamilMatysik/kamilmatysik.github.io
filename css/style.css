@@ -166,7 +166,7 @@ body{
 #projectPanel{
     text-align: center;
     grid-area: 7 / 3 / 11 / 9;
-    padding: 2%;
+    padding: 0%;
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
